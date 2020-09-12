@@ -1,0 +1,121 @@
+header{
+    /* position: fixed; */
+    background-color: #1a252f;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    margin: 0;
+    padding: 0;
+    color: #ffff;
+    font-size: 17px;
+    width: 100%;
+   
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    margin: 0 50px;
+
+    padding: 10px 0px;
+}
+
+header div.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+header img{
+    width: 112px;
+    height: 35px;
+    position: relative;
+    top: 2px;;
+}   
+header ul.items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+header ul li{
+    padding: 0 10px;
+}
+div.menu div.user-tools{
+    width: 100%;
+    margin-left: 20px;
+    position: relative;
+}
+
+div.menu div.user-tools ul{
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background-color: #1a252f;
+    top: 32px;
+    right: -23px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    border-radius: 3px;
+    background: #252e39;
+    box-shadow: 0 4px 8px #000;
+    width: 280px;
+}
+.dropdown-show{
+    display: inline-block;
+}
+.dropdown-hidden{
+    display: none;
+}
+
+div.menu div.user-tools ul li{
+    padding: 14px 100px 14px 20px;
+    outline: 0;
+    border-bottom: 1px solid #323e4c;
+    color: #c4cacf;
+    cursor: pointer;
+    transition: all .2s;
+}
+div.menu div.user-tools svg{
+    cursor: pointer;
+}
+
+div.menu div.user-tools ul li a{
+    text-decoration: none;
+    color: rgba(242,244,246,.9);
+    font-size: 14px;
+}
+div.menu div.user-tools ul li a:hover{
+    color: #fff;
+}
+div.menu div.user-tools ul li:hover{
+    background: #566b83;
+}
+div.menu div.user-tools ul li:hover a{
+    color: #fff;
+}
+
+div.protected{
+    width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0; 
+   left: 0;
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.6);
+}
+div.pelicula {
+    opacity: 0.6;
+}

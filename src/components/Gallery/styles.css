@@ -1,0 +1,7 @@
+.slider{
+    position: relative;
+    top:20px;
+    width: 100%;
+    border: 1px solid #fff;
+    height: 200px;
+}
