@@ -28,9 +28,7 @@ div.screem {
     background: rgb(0,0,0,0.5);
     opacity: 0.5;
 }
-div.screem img {
-    transition: margin 0.3s ease;
-}
+
 
 div.controls {
     position: absolute;
@@ -39,7 +37,7 @@ div.controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    z-index: 98;
 }
 
 div.dots {
@@ -49,6 +47,7 @@ div.dots {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99;
 }
 div.dots div.dot{
     width: 14px;

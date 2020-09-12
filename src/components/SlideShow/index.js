@@ -26,6 +26,12 @@ export default function SlideShow(params) {
         setIndex(index - 1);
       }
     }
+
+    const moveDot = (i) => {
+      setIndex(i);
+      setMove(-i * 1500);
+    }
+
     return (
        <div className="slide">
           <div className="content-slide">
@@ -43,7 +49,7 @@ export default function SlideShow(params) {
               {imgs.map((e, i) => <img src={e} key={i}></img>)}   
             </div>    
             <div className="dots">
-              {imgs.map((img, i) => <div key={i} className={index === i ? 'dot active' : 'dot'}></div>)}
+              {imgs.map((img, i) => <div key={i} onClick={() => moveDot(i)} className={index === i ? 'dot active' : 'dot'} ></div>)}
             </div>  
           </div>  
        </div>        
