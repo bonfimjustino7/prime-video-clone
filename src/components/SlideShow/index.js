@@ -46,7 +46,7 @@ export default function SlideShow(params) {
           </div>
           <div className="screem">
             <div className="show" style={ {marginLeft: move} }>
-              {imgs.map((e, i) => <img src={e} key={i}></img>)}   
+              {imgs.map((e, i) => <img src={e} alt={`Imagem ${i}`} key={i}></img>)}   
             </div>    
             <div className="dots">
               {imgs.map((img, i) => <div key={i} onClick={() => moveDot(i)} className={index === i ? 'dot active' : 'dot'} ></div>)}

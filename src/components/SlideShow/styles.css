@@ -23,6 +23,7 @@ div.screem {
 }
 .next, .prev {
     height: 100%;
+    transition: all 0.2s ease-in;
 }
 .next:hover, .prev:hover {
     background: rgb(0,0,0,0.5);
