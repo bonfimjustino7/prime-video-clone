@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import './styles.css';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import { useEffect } from 'react';
 
 export default function SlideShow(params) {
     const [move, setMove] = useState(0);  
@@ -31,6 +32,14 @@ export default function SlideShow(params) {
       setIndex(i);
       setMove(-i * 1500);
     }
+
+    //AutoPlay
+    useEffect(() => {
+      const next = (index + 1) % imgs.length;
+      const id = setTimeout(() => moveDot(next), 8000);
+      return () => clearTimeout(id);
+
+    }, [index]);
 
     return (
        <div className="slide">
